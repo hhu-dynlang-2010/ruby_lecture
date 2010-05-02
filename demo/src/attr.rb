@@ -1,3 +1,5 @@
+require 'spec'
+
 class A
   attr_accessor :foo
 end

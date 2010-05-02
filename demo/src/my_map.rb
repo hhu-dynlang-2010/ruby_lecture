@@ -1,3 +1,5 @@
+require 'spec'
+
 class Array
   def my_map()
     raise ArgumentError unless block_given?

@@ -1,3 +1,5 @@
+require 'spec'
+
 class A
   def initialize()
     @i = 123

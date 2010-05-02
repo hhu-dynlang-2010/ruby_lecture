@@ -1,4 +1,5 @@
 require 'spec'
+
 class PyObject
   def initialize(attrs)
     @dict = attrs

@@ -1,3 +1,5 @@
+require 'spec'
+
 class Vector
   def initialize(values)
     @values = values

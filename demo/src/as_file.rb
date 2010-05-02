@@ -1,3 +1,5 @@
+require 'spec'
+
 class String
   def as_file(m='r')
     f = File.new(self, m)
