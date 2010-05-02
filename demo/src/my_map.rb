@@ -1,11 +1,9 @@
 class Array
   def my_map()
     raise ArgumentError unless block_given?
-    i = 0
-    a = []
-    while i < self.length
-      a << yield(self[i])
-      i += 1
+    a = Array.new(self.length)
+    for i in (0...self.length)
+      a[i] = yield(self[i])
     end
     a
   end
