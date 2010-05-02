@@ -14,17 +14,24 @@ end
 # With block capturing
 class String
   def as_file(m='r', &block)
-    File.open(self, m, &block)
+    return File.open(self, m, &block) if block
+    File.new(self, m)
   end
 end
 
-describe String do
-  def next
+# Hack
+class Object
+  def self.next_file
     @i ||= 0
     @i += 1
   end
+end
+describe String do
+  def next_file
+    Object.next_file
+  end
   before(:each) do
-    @subject = "test_#{self.next}.txt"
+    @subject = "test_#{next_file}.txt"
   end
 
   it 'should write to the file if the flag if given' do
@@ -44,6 +51,7 @@ describe String do
   end
 
   it 'should return the file if no block is given' do
-    subject.as_file.should be_a(File)
+    File.open(@subject, 'w'){}
+    @subject.as_file.should be_a(File)
   end
 end
