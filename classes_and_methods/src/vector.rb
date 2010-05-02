@@ -4,7 +4,11 @@ class Vector
   end
 
   def *(other)
-    Vector.new(@values.map{|v| v * other})
+    b = Array.new(@values.length)
+    for i in (0...@values.length)
+      b[i] = @values[i] * other
+    end
+    Vector.new(b)
   end
 
   def values()
