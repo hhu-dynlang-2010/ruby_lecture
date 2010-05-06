@@ -26,7 +26,7 @@
 !SLIDE bullets
 ## Many implementations on different Platforms ##
 
-  * JRuby (Java)
+  * JRuby (JVM)
 
   * IronRuby (.Net/Mono)
 
