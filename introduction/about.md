@@ -5,9 +5,9 @@
 
 ## Vorlesung Dynamische Programmiersprachen ##
 
-### Carl Friedrich Bolz, David Schneider ###
+### David Schneider ###
 
-#### SoSe 2010 - Heinrich-Heine Universität Düsseldorf ####
+#### Wise 2011/2012 - Heinrich-Heine Universität Düsseldorf ####
 
 !SLIDE incremental bullets
 
@@ -34,7 +34,7 @@
 
   * MagLev (Smalltalk)
 
-  * Rubinius (Started as ruby in ruby now a VM written in C++ using LLVM)
+  * Rubinius (Started as ruby in ruby now written in C++ using LLVM for JIT-Compilation)
 
   * …
 
