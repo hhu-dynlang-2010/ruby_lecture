@@ -7,7 +7,7 @@
 
 ### David Schneider ###
 
-#### Wise 2011/2012 - Heinrich-Heine Universität Düsseldorf ####
+#### WiSe 2011/2012 - Heinrich-Heine Universität Düsseldorf ####
 
 !SLIDE incremental bullets
 
@@ -21,7 +21,9 @@
 
 - Inspired by Smalltalk, Lisp, Perl among others
 
-- Current Version 1.9.2 also called MRI
+- Current Version 1.9.2
+
+- Official version also called MRI
 
 !SLIDE bullets
 ## Many implementations on different Platforms ##
